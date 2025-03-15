@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Теги</title>
+    <title>Стили</title>
   </head>
-  <body>
-    <h1>Заголовок</h1>
-    <p>Параграф.</p>
-    <b>Жирный шрифт</b>
-    <p> <em>Курсив</em> </p>
-    <mark>Выделенный текст</mark>
-    <ol>
-      <li>Чай</li>
-      <li>Кофе</li>
-      <li>Какао</li>
-    </ol>
-    <s>Перечеркнутый текст</s>
-    <p><small>маленький текст</small></p>
-    <p>Этот текст содержит символ <sup> верхнего индекса</sup>.</p>
-
-    <h1>Сводка</h1>
-
-    <details>
-      <summary>Район</summary>
-      <p>Первома́йский о́круг — южный, самый большой по площади и численности населения административный округ в Мурманске.</p>
+  <body style="font-family: Arial; background-color: #DCDCDC; margin: 0; padding: 10px; display: flex; flex-direction: column; align-items: center;">
+    <div style="background-color: white; padding: 10px; border-radius: 8px; width: 90%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 10px;">
+      <h1 style="color: #2F4F4F; text-align: center; margin: 5px 0;">Заголовок</h1>
+      <p style="padding: 5px; text-align: justify; margin: 15px 0;">Параграф с текстом. Здесь может быть описание или основная информация.</p>
+    </div>
+    <div style="background-color: white; padding: 10px; border-radius: 8px; width: 90%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 10px;">
+      <b style="font-size: 18px;">Жирный шрифт</b>
+      <p style="margin: 5px 0;"><em style="color: #555;">Курсивный текст для выделения важной информации.</em></p>
+    </div>
+    <div style="background-color: white; padding: 10px; border-radius: 8px; width: 90%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 10px;">
+      <mark style="padding: 3px 8px; border-radius: 4px; background-color: #FFFACD;">Выделенный текст</mark>
+      <p style="margin: 5px 0;"><s style="color: #888;">Перечеркнутый текст, который больше не актуален.</s></p>
+    </div>
+    <div style="background-color: white; padding: 10px; border-radius: 8px; width: 90%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 10px;">
+      <ol style="margin: 5px 0; padding-left: 20px;">
+        <li>Чай</li>
+        <li>Кофе</li>
+        <li>Какао</li>
+      </ol>
+    </div>
+    <div style="background-color: white; padding: 10px; border-radius: 8px; width: 90%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 10px;">
+      <p style="margin: 5px 0;"><small style="color: #666;">Маленький текст для дополнительной информации.</small></p>
+      <p style="margin: 5px 0;">Этот текст содержит символ <sup style="font-size: 12px; color: #555;">верхнего индекса</sup>.</p>
+    </div>
+    <div style="background-color: white; padding: 10px; border-radius: 8px; width: 90%; box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); margin-bottom: 10px;">
+      <h1 style="color: blue; text-align: center; margin: 5px 0;">Сводка</h1>
+      <details style="margin: 5px 0;">
+        <summary style="font-weight: bold; color: #333;">Район</summary>
+        <p style="color: #555; margin: 5px 0;">Первома́йский о́круг — южный, самый большой по площади и численности населения административный округ в Мурманске.</p>
       </details>
+    </div>
   </body>
 </html>
-
