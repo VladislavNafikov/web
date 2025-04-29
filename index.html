@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Теги</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Заголовок</h1>
-    <p>Параграф.</p>
-    <b>Жирный шрифт</b>
-    <p> <em>Курсив</em> </p>
-    <mark>Выделенный текст</mark>
-    <ol>
-      <li>Чай</li>
-      <li>Кофе</li>
-      <li>Какао</li>
-    </ol>
-    <s>Перечеркнутый текст</s>
-    <p><small>маленький текст</small></p>
-    <p>Этот текст содержит символ <sup> верхнего индекса</sup>.</p>
+    <div class="grid-container">
+      <header class="header-container">
+        <h1 id="main-title">Заголовок</h1>
+        <p class="description">Параграф с текстом. Здесь может быть описание или основная информация.</p>
+      </header>
+      
+      <main class="content-grid">
 
-    <h1>Сводка</h1>
-
-    <details>
-      <summary>Район</summary>
-      <p>Первома́йский о́круг — южный, самый большой по площади и численности населения административный округ в Мурманске.</p>
-      </details>
+        <div class="flex-container">
+          <div class="text-styles animated-box">
+            <b class="bold-text">Жирный шрифт</b>
+            <p><em>Курсивный текст для выделения важной информации.</em></p>
+          </div>
+          <div class="text-styles animated-box">
+            <mark>Выделенный текст</mark>
+            <p><s>Перечеркнутый текст, который больше не актуален.</s></p>
+          </div>
+        </div>
+        
+        <div class="list-container">
+          <ol class="drinks-list">
+            <p class="list-title">Список напитков</p>
+            <li>Чай</li>
+            <li>Кофе</li>
+            <li>Какао</li>
+          </ol>
+        </div>
+      </main>
+      
+      <aside class="sidebar">
+        <div class="summary">
+          <h2 class="summary-title">Сводка</h2>
+          <details class="details-box">
+            <summary class="summary-bottom">Район</summary>
+            <p class="details-content">Первома́йский о́круг — южный, самый большой по площади и численности населения административный округ в Мурманске.</p>
+          </details>
+        </div>
+      </aside>
+      
+      <footer class="footer">
+        <div class="footer-flex">
+          <p class="footer-text"><small>Маленький текст для дополнительной информации.</small></p>
+          <p class="footer-text">Этот текст содержит символ <sup>верхнего индекса</sup>.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
-
